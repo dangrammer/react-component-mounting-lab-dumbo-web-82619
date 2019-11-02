@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react'
 
 class Timer extends Component {
 
@@ -12,7 +12,7 @@ class Timer extends Component {
   }
 
   componentWillUnmount() {
-    this.stopClock()
+    clearInterval(this.interval)
   }
 
   render() {
@@ -27,7 +27,7 @@ class Timer extends Component {
         <small onClick={ this.handleClose }>X</small>
 
       </section>
-    );
+    )
   }
 
   //clock functions
@@ -49,4 +49,4 @@ class Timer extends Component {
 
 }
 
-export default Timer;
+export default Timer

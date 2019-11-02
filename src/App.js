@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react'
 
 import Timer from './Timer'
 
@@ -24,7 +24,7 @@ class App extends Component {
         </div>
 
       </div>
-    );
+    )
   }
 
   // returns array of components written in JSX, mapped from this.state.timerIDs
@@ -49,4 +49,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default App
